@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-pinterest/static/css/main.a648f4d0.chunk.css",
-    "main.js": "/react-pinterest/static/js/main.f655cbc8.chunk.js",
-    "main.js.map": "/react-pinterest/static/js/main.f655cbc8.chunk.js.map",
+    "main.js": "/react-pinterest/static/js/main.1abe4288.chunk.js",
+    "main.js.map": "/react-pinterest/static/js/main.1abe4288.chunk.js.map",
     "runtime-main.js": "/react-pinterest/static/js/runtime-main.12e47fbd.js",
     "runtime-main.js.map": "/react-pinterest/static/js/runtime-main.12e47fbd.js.map",
     "static/js/2.fabe5863.chunk.js": "/react-pinterest/static/js/2.fabe5863.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.12e47fbd.js",
     "static/js/2.fabe5863.chunk.js",
     "static/css/main.a648f4d0.chunk.css",
-    "static/js/main.f655cbc8.chunk.js"
+    "static/js/main.1abe4288.chunk.js"
   ]
 }
