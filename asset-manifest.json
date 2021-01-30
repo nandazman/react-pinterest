@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-pinterest/static/css/main.a648f4d0.chunk.css",
+    "main.js": "/react-pinterest/static/js/main.f655cbc8.chunk.js",
+    "main.js.map": "/react-pinterest/static/js/main.f655cbc8.chunk.js.map",
+    "runtime-main.js": "/react-pinterest/static/js/runtime-main.12e47fbd.js",
+    "runtime-main.js.map": "/react-pinterest/static/js/runtime-main.12e47fbd.js.map",
+    "static/js/2.fabe5863.chunk.js": "/react-pinterest/static/js/2.fabe5863.chunk.js",
+    "static/js/2.fabe5863.chunk.js.map": "/react-pinterest/static/js/2.fabe5863.chunk.js.map",
+    "static/js/3.c55a11c1.chunk.js": "/react-pinterest/static/js/3.c55a11c1.chunk.js",
+    "static/js/3.c55a11c1.chunk.js.map": "/react-pinterest/static/js/3.c55a11c1.chunk.js.map",
+    "index.html": "/react-pinterest/index.html",
+    "static/css/main.a648f4d0.chunk.css.map": "/react-pinterest/static/css/main.a648f4d0.chunk.css.map",
+    "static/js/2.fabe5863.chunk.js.LICENSE.txt": "/react-pinterest/static/js/2.fabe5863.chunk.js.LICENSE.txt",
+    "static/media/chat.f9636800.svg": "/react-pinterest/static/media/chat.f9636800.svg",
+    "static/media/chevron-bottom.920b173a.svg": "/react-pinterest/static/media/chevron-bottom.920b173a.svg",
+    "static/media/logo.aa2884d4.svg": "/react-pinterest/static/media/logo.aa2884d4.svg",
+    "static/media/notification.e7bfbd67.svg": "/react-pinterest/static/media/notification.e7bfbd67.svg",
+    "static/media/profile.51609603.svg": "/react-pinterest/static/media/profile.51609603.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12e47fbd.js",
+    "static/js/2.fabe5863.chunk.js",
+    "static/css/main.a648f4d0.chunk.css",
+    "static/js/main.f655cbc8.chunk.js"
+  ]
+}
