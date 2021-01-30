@@ -31,7 +31,7 @@ function Main() {
 
   useEffect(() => {
     const fetchImage = async (page) => {
-      const response = await fetch(`https://picsum.photos/v2/list?page=${page + 1}`);
+      const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=30');
       const data = await response.json();
       dispatch({
         type: SET_PHOTOS,
@@ -45,7 +45,7 @@ function Main() {
     <div className="main" style={{ "position": "relative", "maxWidth": `${maxElement * 260}px`, "margin": "auto", "display": "grid", "gridTemplateColumns": "repeat(auto-fit, 252px)", "justifyContent": "center", "gridAutoRows": `${baseHeightImage}px`, "gridColumnGap": "15px", "gridRowGap": "10px"}}>
       {store.photos.map((_, i) => {
         return (<div className="image-container" key={i} style={{ "width": "252px", "display": "flex", "flexDirection": "column"}}>
-          <Image key={i} index={i} maxElement={maxElement} downloadUrl={store.photos[i].download_url} url={store.photos[i].url} />
+          <Image key={i} index={i} maxElement={maxElement} url={store.photos[i].url} alt={store.photos[i].id} />
         </div>)
       })}
       <button style={{ "position": "fixed", "bottom": "0"}} onClick={() => dispatch({

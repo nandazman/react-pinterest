@@ -1,7 +1,7 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 
-function Image({ downloadUrl, url, index, maxElement }) {
+function Image({ url, alt, index, maxElement }) {
   console.log({ index })
   const updateContainerMargin = () => {
     const upperElement = document.querySelectorAll('.image-container')[index - maxElement + 1];
@@ -29,7 +29,7 @@ function Image({ downloadUrl, url, index, maxElement }) {
   }
   return (
     <LazyLoad offset={200} placeholder={<img style={{ "width": "252px", "height": "300px" }} src="https://trirama.com/wp-content/uploads/2016/10/orionthemes-placeholder-image.png" alt="plcaeholder" />}>
-      <img style={{ "width": "252px" }} src={downloadUrl} alt={url} onLoad={updateContainerMargin} />
+      <img style={{ "width": "252px" }} src={url} alt={alt} onLoad={updateContainerMargin} />
     </LazyLoad>
   )
 }
