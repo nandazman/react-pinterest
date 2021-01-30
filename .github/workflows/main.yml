@@ -11,7 +11,7 @@ jobs:
 
       - name: Install and Deploy 🔧
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install
           npm run deploy
