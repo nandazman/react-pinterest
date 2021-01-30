@@ -27,7 +27,7 @@ const reducer = (state, action) => {
 function Main() {
   const baseHeightImage = 180;
   const [store, dispatch] = useReducer(reducer, initState);
-  const [maxElement, setMaxElement] = useState(Math.floor(window.outerWidth / 260));
+  const [maxElement] = useState(Math.floor(window.outerWidth / 260));
 
   useEffect(() => {
     const fetchImage = async (page) => {
