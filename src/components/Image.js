@@ -2,6 +2,7 @@ import React from 'react';
 import LazyLoad from 'react-lazyload';
 
 function Image({ downloadUrl, url, index, maxElement }) {
+  console.log({ index })
   const updateContainerMargin = () => {
     const upperElement = document.querySelectorAll('.image-container')[index - maxElement + 1];
     const container = document.querySelectorAll('.image-container')[index];
@@ -15,7 +16,7 @@ function Image({ downloadUrl, url, index, maxElement }) {
       }
 
       function updateStyle() {
-        const difference = (image.height + getMarginTop(upperElement.style.marginTop)) - container.offsetHeight;
+        const difference = (image.height + getMarginTop(upperElement.style.marginTop)) - container.offsetHeight + 10;
         container.style.marginTop = `${difference}px`;
         container.style.height = container.querySelector('img').height + 'px';
       }
@@ -33,4 +34,4 @@ function Image({ downloadUrl, url, index, maxElement }) {
   )
 }
 
-export default Image;
+export default React.memo(Image);
