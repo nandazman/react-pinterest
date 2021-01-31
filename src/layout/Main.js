@@ -1,5 +1,5 @@
 import { useState, useEffect, useReducer } from 'react';
-import Image from '../components/Image';
+import Columns from '../components/Columns';
 
 const SET_PHOTOS = 'SET_PHOTOS';
 const ADD_PHOTOS = 'ADD_PHOTOS';
@@ -52,20 +52,14 @@ function Main() {
     const newMaxElement = Math.floor(window.outerWidth / 260);
     if (maxElement !== newMaxElement) {
       setMaxElement(Math.floor(window.outerWidth / 260));
-      fetchImage(SET_PHOTOS);
+      // fetchImage(SET_PHOTOS);
     }
 }
 
   return (
     <div className="main" style={{ "position": "relative", "display": "grid", "gridTemplateColumns": "repeat(auto-fit, 252px)", "justifyContent": "center", "gridAutoRows": `${baseHeightImage}px`, "gridColumnGap": "15px", "gridRowGap": "10px"}}>
-      {store.photos.map((_, i) => {
-        return (<div className="image-container" key={i} style={{ "width": "252px", "display": "flex", "flexDirection": "column"}}>
-          <Image key={i} index={i} maxElement={maxElement} url={store.photos[i].url} alt={store.photos[i].id} />
-        </div>)
-      })}
-      <button style={{ "position": "fixed", "bottom": "0"}} onClick={() => dispatch({
-        type: ADD_PAGE,
-      })}>Add</button>
+      <Columns maxElement={maxElement} photos={store.photos} />
+      <button style={{ "position": "fixed", "bottom": "0"}} onClick={() => fetchImage(ADD_PHOTOS)}>Add</button>
     </div>
   )
 }
